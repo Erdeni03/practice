@@ -1,0 +1,8 @@
+.button {
+	@apply py-3 px-6 rounded-lg border-none text-sm cursor-pointer;
+	background-color: var(--main-color);
+	color: var(--white);
+	&:hover {
+		background-color: var(--main-color-hover);
+	}
+}

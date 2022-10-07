@@ -1,0 +1,21 @@
+.switcher {
+	@apply flex items-center gap-4 cursor-pointer;
+
+	span {
+		@apply text-sm uppercase tracking-wide text-gray-200;
+	}
+
+	&:hover {
+		span {
+			color: var(--switcher-color-hover);
+		}
+
+		svg {
+			fill: var(--switcher-color-hover);
+		}
+	}
+}
+
+.icon {
+	@apply fill-gray-100 dark:fill-white;
+}

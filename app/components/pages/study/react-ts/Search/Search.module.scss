@@ -1,0 +1,43 @@
+.search {
+	@apply relative w-full overflow-hidden flex items-center bg-gray-100 shadow rounded-xl md:py-2.5 pr-2.5 pl-5;
+	& > button {
+		@apply shrink-0;
+	}
+}
+
+.label {
+	@apply cursor-pointer;
+	svg {
+		@apply w-5 h-5 fill-indigo-600;
+	}
+}
+
+.textField {
+	@apply py-0 px-2.5 h-16 border-none text-gray-700 text-lg cursor-pointer bg-gray-100;
+	flex-grow: 5;
+	max-width: calc(100% - 100px - 20px);
+
+	&:focus {
+		outline: none;
+	}
+	&::placeholder {
+		@apply text-lg;
+	}
+}
+
+.error {
+	position: absolute;
+	right: 50%;
+	bottom: 5px;
+	color: var(--error-color);
+	font-size: 1rem;
+	line-height: 1.5;
+	font-weight: 700;
+
+	@media (min-width: 767px) {
+		right: 120px;
+		top: 50%;
+		transform: translateY(-50%);
+		bottom: unset;
+	}
+}
